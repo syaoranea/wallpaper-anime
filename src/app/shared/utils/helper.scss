@@ -1,0 +1,567 @@
+// -> config
+
+$helper-prefix: "zh-";
+$base-font: 1;
+$base-spacing: 4;
+
+// -> position
+
+.#{$helper-prefix}p-static {
+    position: static !important;
+}
+
+.#{$helper-prefix}p-relative {
+    position: relative !important;
+}
+
+.#{$helper-prefix}p-absolute {
+    position: absolute !important;
+}
+
+.#{$helper-prefix}p-fixed {
+    position: fixed !important;
+}
+
+.#{$helper-prefix}p-sticky {
+    position: sticky !important;
+}
+
+// -> display 
+
+.#{$helper-prefix}d-none {
+    display: none !important;
+}
+
+.#{$helper-prefix}d-block {
+    display: block !important;
+}
+
+.#{$helper-prefix}d-grid {
+    display: grid !important;
+}
+
+.#{$helper-prefix}d-flex {
+    display: flex !important;
+}
+
+.#{$helper-prefix}d-table {
+    display: table !important;
+}
+
+// -> sizes
+
+.#{$helper-prefix}w-25 {
+    width: 25% !important;
+}
+
+.#{$helper-prefix}w-50 {
+    width: 50% !important;
+}
+
+.#{$helper-prefix}w-75 {
+    width: 75% !important;
+}
+
+.#{$helper-prefix}w-100 {
+    width: 100% !important;
+}
+
+.#{$helper-prefix}w-auto {
+    width: auto !important;
+}
+
+.#{$helper-prefix}h-25 {
+    height: 25% !important;
+}
+
+.#{$helper-prefix}h-50 {
+    height: 50% !important;
+}
+
+.#{$helper-prefix}h-75 {
+    height: 75% !important;
+}
+
+.#{$helper-prefix}h-100 {
+    height: 100% !important;
+}
+
+.#{$helper-prefix}h-auto {
+    height: auto !important;
+}
+
+.#{$helper-prefix}mw-100 {
+    max-width: 100% !important;
+}
+
+.#{$helper-prefix}mv-100 {
+    max-height: 100% !important;
+}
+
+// -> pointer events
+
+.#{$helper-prefix}pe-none {
+    pointer-events: none !important;
+}
+
+.#{$helper-prefix}pe-pointer {
+    pointer-events: auto !important;
+}
+
+// -> cursor 
+
+.#{$helper-prefix}cursor-auto {
+    cursor: auto !important;
+}
+
+.#{$helper-prefix}cursor-pointer {
+    cursor: pointer !important;
+}
+
+
+// -> overflow
+
+.#{$helper-prefix}overflow-auto {
+    overflow: auto !important;
+}
+
+.#{$helper-prefix}overflow-hidden {
+    overflow: hidden !important;
+}
+
+.#{$helper-prefix}overflow-visible {
+    overflow: visible !important;
+}
+
+overflow .#{$helper-prefix}overflow-scroll {
+    overflow: scroll !important;
+}
+
+// -> text
+
+.#{$helper-prefix}text-start {
+    text-align: left !important;
+}
+
+.#{$helper-prefix}text-end {
+    text-align: right !important;
+}
+
+.#{$helper-prefix}text-center {
+    text-align: center !important;
+}
+
+.#{$helper-prefix}text-wrap {
+    white-space: normal !important;
+}
+
+.#{$helper-prefix}text-nowrap {
+    white-space: nowrap !important;
+}
+
+.#{$helper-prefix}text-break {
+    word-wrap: break-word !important;
+    word-break: break-all !important;
+}
+
+.#{$helper-prefix}text-lowcase {
+    text-transform: lowercase !important;
+}
+
+.#{$helper-prefix}text-uppercase {
+    text-transform: uppercase !important;
+}
+
+.#{$helper-prefix}text-capitalize {
+    text-transform: capitalize !important;
+}
+
+.#{$helper-prefix}fw-bold {
+    font-weight: 700 !important;
+}
+
+.#{$helper-prefix}fw-heavy {
+    font-weight: 800 !important;
+}
+
+.#{$helper-prefix}fw-normal {
+    font-weight: 400 !important;
+}
+
+.#{$helper-prefix}fw-ligth {
+    font-weight: 300 !important;
+}
+
+.#{$helper-prefix}fst-italic {
+    font-weight: 700 !important;
+}
+
+.#{$helper-prefix}fst-normal {
+    font-weight: 800 !important;
+}
+
+.#{$helper-prefix}text-decoration-undeline {
+    text-decoration: underline !important;
+}
+
+.#{$helper-prefix}text-decoration-line {
+    text-decoration: line-through !important;
+}
+
+.#{$helper-prefix}text-decoration-none {
+    text-decoration: none !important;
+}
+
+@for $i from 1 to 30 {
+
+    // -> font size
+
+    .#{$helper-prefix}fs-#{$base-font * $i} {
+        font-size: #{$base-font * $i}px !important;
+    }
+
+    // -> line heigth
+
+    .#{$helper-prefix}lh-#{$base-font * $i} {
+        line-height: #{$base-font * $i}px !important;
+    }
+
+}
+
+// -> spacing
+
+.#{$helper-prefix}ms-auto { margin-right: auto !important;}
+
+.#{$helper-prefix}me-auto { margin-left: auto !important;}
+
+.#{$helper-prefix}mx-auto {
+    margin-right: auto !important;
+    margin-left: auto !important;
+}
+
+.#{$helper-prefix}m-0 {
+    margin: 0 !important;
+}
+
+.#{$helper-prefix}mt-0 {
+    margin-top: 0 !important;
+}
+
+.#{$helper-prefix}me-0 {
+    margin-right: 0 !important;
+}
+
+.#{$helper-prefix}mb-0 {
+    margin-bottom: 0 !important;
+}
+
+.#{$helper-prefix}ms-0 {
+    margin-left: 0 !important;
+}
+
+.#{$helper-prefix}p-0 {
+    padding: 0 !important;
+}
+
+.#{$helper-prefix}pt-0 {
+    padding-top: 0 !important;
+}
+
+.#{$helper-prefix}pe-0 {
+    padding-right: 0 !important;
+}
+
+.#{$helper-prefix}pb-0 {
+    padding-bottom: 0 !important;
+}
+
+.#{$helper-prefix}ps-0 {
+    padding-left: 0 !important;
+}
+
+@for $i from 1 to 30 {
+
+    // -> margin
+
+    .#{$helper-prefix}m-#{$base-spacing * $i} {
+        margin: #{$base-spacing * $i}px !important;
+    }
+
+    .#{$helper-prefix}mt-#{$base-spacing * $i} {
+        margin-top: #{$base-spacing * $i}px !important;
+    }
+
+    .#{$helper-prefix}me-#{$base-spacing * $i} { margin-right: #{$base-spacing * $i}px !important;}
+
+    .#{$helper-prefix}mb-#{$base-spacing * $i} {
+        margin-bottom: #{$base-spacing * $i}px !important;
+    }
+
+    .#{$helper-prefix}ms-#{$base-spacing * $i} {margin-left: #{$base-spacing * $i}px !important;}
+
+    .#{$helper-prefix}my-#{$base-spacing * $i} {
+        margin-top: #{$base-spacing * $i}px !important;
+        margin-bottom: #{$base-spacing * $i}px !important;
+    }
+
+    .#{$helper-prefix}mx-#{$base-spacing * $i} {
+        margin-left: #{$base-spacing * $i}px !important;
+        margin-right: #{$base-spacing * $i}px !important;
+    }
+
+    // -> padding
+
+    .#{$helper-prefix}p-#{$base-spacing * $i} {
+        padding: #{$base-spacing * $i}px !important;
+    }
+
+    .#{$helper-prefix}pt-#{$base-spacing * $i} {
+        padding-top: #{$base-spacing * $i}px !important;
+    }
+
+    .#{$helper-prefix}pe-#{$base-spacing * $i} {
+        padding-right: #{$base-spacing * $i}px !important;
+    }
+
+    .#{$helper-prefix}pb-#{$base-spacing * $i} {
+        padding-bottom: #{$base-spacing * $i}px !important;
+    }
+
+    .#{$helper-prefix}ps-#{$base-spacing * $i} {
+        padding-left: #{$base-spacing * $i}px !important;
+    }
+
+    .#{$helper-prefix}py-#{$base-spacing * $i} {
+        padding-top: #{$base-spacing * $i}px !important;
+        padding-bottom: #{$base-spacing * $i}px !important;
+    }
+
+    .#{$helper-prefix}px-#{$base-spacing * $i} {
+        padding-left: #{$base-spacing * $i}px !important;
+        padding-right: #{$base-spacing * $i}px !important;
+    }
+
+}
+
+
+// -> flexbox
+
+.#{$helper-prefix}d-flex {
+    display: flex !important;
+}
+
+.#{$helper-prefix}d-inline-flex {
+    display: inline-flex !important;
+}
+
+.#{$helper-prefix}flex-row {
+    flex-direction: row !important;
+}
+
+.#{$helper-prefix}flex-row-reverse {
+    flex-direction: row-reverse !important;
+}
+
+.#{$helper-prefix}flex-c {
+    flex-direction: column !important;
+}
+
+.#{$helper-prefix}flex-c-r {
+    flex-direction: column-reverse !important;
+}
+
+.#{$helper-prefix}justify-con-start {justify-content: flex-start !important;}
+
+.#{$helper-prefix}justify--con-end {justify-content: flex-end !important;}
+
+.#{$helper-prefix}justify-con-ini {
+    justify-content: initial !important;
+}
+
+.#{$helper-prefix}justify-con-center {
+    justify-content: center !important;
+}
+
+.#{$helper-prefix}justify-con-betwen {
+    justify-content: space-between !important;
+}
+
+.#{$helper-prefix}justify-con-around {
+    justify-content: space-around !important;
+}
+
+.#{$helper-prefix}justify-con-evenly {
+    justify-content: space-evenly !important;
+}
+
+.#{$helper-prefix}justify-self-right {
+    justify-self: right !important;
+}
+
+.#{$helper-prefix}align-itens-start {
+    align-items: flex-start !important;
+}
+
+.#{$helper-prefix}align--itens-end {
+    align-items: flex-end !important;
+}
+
+.#{$helper-prefix}align-itens-center {
+    align-items: center !important;
+}
+
+.#{$helper-prefix}align-itens-baseline {
+    align-items: baseline !important;
+}
+
+.#{$helper-prefix}align-itens-stretch {
+    align-items: stretch !important;
+}
+
+.#{$helper-prefix}align-self-start {
+    align-self: flex-start !important;
+}
+
+.#{$helper-prefix}align--self-end {
+    align-self: flex-end !important;
+}
+
+.#{$helper-prefix}align-self-center {
+    align-self: center !important;
+}
+
+.#{$helper-prefix}align-self-baseline {
+    align-self: baseline !important;
+}
+
+.#{$helper-prefix}align-self-stretch {
+    align-self: stretch !important;
+}
+
+.#{$helper-prefix}justify-self-end {
+    justify-self: self-end !important;
+}
+
+.#{$helper-prefix}flex-fill {
+    flex: 1 1 auto !important;
+}
+
+.#{$helper-prefix}flex-grow {
+    flex-grow: 1 !important;
+}
+
+.#{$helper-prefix}flex-shrink {
+    flex-shrink: 1 !important;
+}
+
+.#{$helper-prefix}justify-nowrap {
+    flex-wrap: nowrap !important;
+}
+
+.#{$helper-prefix}justify-wrap {
+    flex-wrap: wrap !important;
+}
+
+.#{$helper-prefix}justify-wrap-reverse {
+    flex-wrap: wrap-reverse !important;
+}
+
+// -> border
+
+.#{$helper-prefix}w-25 {
+    width: 25% !important;
+}
+
+.#{$helper-prefix}w-50 {
+    width: 50% !important;
+}
+
+.#{$helper-prefix}w-75 {
+    width: 75% !important;
+}
+
+.#{$helper-prefix}w-100 {
+    width: 100% !important;
+}
+
+.#{$helper-prefix}w-auto {
+    width: auto !important;
+}
+
+.#{$helper-prefix}h-25 {
+    height: 25% !important;
+}
+
+.#{$helper-prefix}h-50 {
+    height: 50% !important;
+}
+
+.#{$helper-prefix}h-75 {
+    height: 75% !important;
+}
+
+.#{$helper-prefix}h-100 {
+    height: 100% !important;
+}
+
+.#{$helper-prefix}h-auto {
+    height: auto !important;
+}
+
+.#{$helper-prefix}mw-100 {
+    max-width: 100% !important;
+}
+
+.#{$helper-prefix}mv-100 {
+    max-height: 100% !important;
+}
+
+// -> border
+
+.#{$helper-prefix}w-25 {
+    width: 25% !important;
+}
+
+.#{$helper-prefix}w-50 {
+    width: 50% !important;
+}
+
+.#{$helper-prefix}w-75 {
+    width: 75% !important;
+}
+
+.#{$helper-prefix}w-100 {
+    width: 100% !important;
+}
+
+.#{$helper-prefix}w-auto {
+    width: auto !important;
+}
+
+.#{$helper-prefix}h-25 {
+    height: 25% !important;
+}
+
+.#{$helper-prefix}h-50 {
+    height: 50% !important;
+}
+
+.#{$helper-prefix}h-75 {
+    height: 75% !important;
+}
+
+.#{$helper-prefix}h-100 {
+    height: 100% !important;
+}
+
+.#{$helper-prefix}h-auto {
+    height: auto !important;
+}
+
+.#{$helper-prefix}mw-100 {
+    max-width: 100% !important;
+}
+
+.#{$helper-prefix}mv-100 {
+    max-height: 100% !important;
+}

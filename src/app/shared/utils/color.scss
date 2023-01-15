@@ -1,0 +1,42 @@
+// -> colors vars
+
+$white: #ffffff;
+$primaryColor: #f58623;;
+$background-color: #1f1f1f;
+$SegundaryColor: #e8e8e8;;
+$PrimaryPurple: #4b0065;
+
+$SecondaryDark: #1f003a;
+$SecondaryMedium: #100021;
+$SecondaryLight: #396772;
+$SecondaryLightest: #8f809d;
+$Neutral: #09001b;
+// $Warning: #C35403;
+// $Report: #E16206;
+// $Error: #F87C23;
+// $Success: #508110;
+
+/* @mixin white(){color: $white;}
+
+@include white-colors() */
+
+
+// -> colors mixins
+
+@mixin color-white { color: $white!important; }
+@mixin color-primary { color: $primaryColor!important; }
+@mixin color-segundary { color: $SegundaryColor!important; }
+@mixin color-black { color: $PrimaryDark!important; }
+@mixin color-purple { color: $PrimaryPurple!important; }
+@mixin SecondaryLight { color: $SecondaryLight!important; }
+
+
+// -> colors classes
+
+
+.color-white { @include color-white; }
+.color-primary{ @include color-primary; }
+.color-segundary { @include color-segundary; }
+.color-purple-dark { @include color-white; }
+.color-black { @include color-white; }
+.color-purple { @include color-white; }
