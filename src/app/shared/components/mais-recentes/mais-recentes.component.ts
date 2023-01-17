@@ -1,42 +1,38 @@
 import { Component, OnInit } from '@angular/core';
-import { Categories } from '../../interface/categorias';
 
 @Component({
-  selector: 'app-resumo',
-  templateUrl: './resumo.component.html',
-  styleUrls: ['./resumo.component.scss']
+  selector: 'app-mais-recentes',
+  templateUrl: './mais-recentes.component.html',
+  styleUrls: ['./mais-recentes.component.scss']
 })
-export class ResumoComponent implements OnInit {
+export class MaisRecentesComponent implements OnInit {
 
-   images = [
+  imagens = [
     {
-      imageSrc:
+      url:
         'https://p4.wallpaperbetter.com/wallpaper/753/706/507/digital-digital-art-anime-anime-girls-looking-at-viewer-hd-wallpaper-preview.jpg',
-      imageAlt: 'nature1',
+      nome: 'nature1',
     },
     {
-      imageSrc:
+      url:
         'https://1.bp.blogspot.com/-nqnYZ7bSio8/YBwTnYFIJ7I/AAAAAAAAPic/qXAwwSonGAgreefUz_oH_8IZBaz27idWwCLcBGAsYHQ/s0/anime.png',
-      imageAlt: 'nature2',
+      nome: 'nature2',
     },
     {
-      imageSrc:
+      url:
         'https://c4.wallpaperflare.com/wallpaper/944/53/270/anime-anime-girls-digital-digital-art-2d-hd-wallpaper-preview.jpg',
-      imageAlt: 'person1',
+      nome: 'person1',
     },
     {
-      imageSrc:
+      url:
         'https://c4.wallpaperflare.com/wallpaper/213/821/300/anime-girls-anime-digital-digital-art-artwork-hd-wallpaper-preview.jpg',
-      imageAlt: 'person2',
+      nome: 'person2',
     },
   ]
-  
+
   constructor() { }
 
-  ngOnInit(): void {    
+  ngOnInit(): void {
   }
 
-  categories: Categories[] = [Categories.Animação, Categories.Animes, Categories.Cosplay, Categories.Ecchi, Categories.Games, Categories.Hentai, Categories.Pixel, Categories.Retro];
-
-  
 }

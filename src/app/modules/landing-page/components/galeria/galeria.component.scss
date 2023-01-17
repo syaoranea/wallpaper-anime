@@ -20,6 +20,11 @@
     border-radius: 5px;
     padding: 8px;
     margin: 0 auto;
+    cursor: pointer;
+    &:hover{
+        background: #000000; 
+        opacity: 0.8;
+    }
 }
 
 @media(max-width: 1750px) {

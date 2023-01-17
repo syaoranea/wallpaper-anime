@@ -13,20 +13,19 @@
         <div class="feature">
             <i class="fas fa-tachometer-alt fa-3x"></i>
             <span class="feature-title">Desktop.</span>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores animi laboriosam illo, doloremque
-                placeat et.</p>
+            <p>Uma Comunidade de Papel de Parede. Veja, baixe, avalie e comente sobre Papéis de Parede em HD, Imagens de fundo para
+            Desktop.</p>
         </div>
         <div class="feature">
             <i class="fas fa-code fa-3x"></i>
             <span class="feature-title">Mobile.</span>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores animi laboriosam illo, doloremque
-                placeat et.</p>
+            <p>Mobile wallpaper, android wallpaper, iPhone wallpaper, download gratuito.</p>
         </div>
         <div class="feature">
             <i class="fas fa-layer-group fa-3x"></i>
             <span class="feature-title">Tablet.</span>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores animi laboriosam illo, doloremque
-                placeat et.</p>
+            <p>Uma Comunidade de Papel de Parede. Veja, baixe, avalie e comente sobre Papéis de Parede em HD, Imagens de fundo para
+            Tablet.</p>
         </div>
     </div>
 </section>
@@ -34,28 +33,8 @@
 <section id="product">
     <div class="headline">Mais Baixados</div>
     <div id="product-container">
-        <img src="/img/iphone-x.png" alt="" class="iphone-x">
         <div id="items">
-            <div class="item">
-                <i class="fas fa-map-marked fa-2x color-primary"></i>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio expedita provident nam hic beatae
-                    voluptate!</p>
-            </div>
-            <div class="item">
-                <i class="fas fa-users fa-2x color-primary"></i>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio expedita provident nam hic beatae
-                    voluptate!</p>
-            </div>
-            <div class="item">
-                <i class="fas fa-glass-cheers fa-2x color-primary"></i>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio expedita provident nam hic beatae
-                    voluptate!</p>
-            </div>
-            <div class="item">
-                <i class="fas fa-book-open fa-2x"></i>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio expedita provident nam hic beatae
-                    voluptate!</p>
-            </div>
+            <app-carousel [images]="images" [autoSlide]="true" class=""></app-carousel>
         </div>
     </div>
 </section>
@@ -64,15 +43,7 @@
     <div class="headline">Recentes</div>
     <div id="testimonials-container">
         <div class="testimonial">
-            <img src="/img/person-1.jpeg" alt="" class="testimonial-image">
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni, autem dolores dolorum cumque
-                voluptas eius. Eum quisquam illum error sapiente?</p>
-        </div>
-        <div class="testimonial">
-            <img src="/img/person-2.jpeg" alt="" class="testimonial-image">
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni, autem dolores dolorum cumque
-                voluptas
-                eius. Eum quisquam illum error sapiente?</p>
+            <app-mais-recentes></app-mais-recentes>
         </div>
     </div>
 </div>

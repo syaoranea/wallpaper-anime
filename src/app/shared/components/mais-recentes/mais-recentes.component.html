@@ -1,0 +1,5 @@
+<section id="mais-recentes">
+    <div id="recentes-container" *ngFor="let imagem of imagens; index as i;">
+        <img src="{{ imagem.url }}" alt="{{ imagem.nome }}" class="recentes-image">
+    </div>
+</section>

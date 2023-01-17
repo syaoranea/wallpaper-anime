@@ -40,6 +40,10 @@
     background: #333;
     padding: 20px;
     border-radius: 5px;
+    cursor: pointer;
+    &:hover{
+        text-decoration: underline;
+    }
 }
 
 .feature-title {
@@ -101,6 +105,7 @@
     padding: 10px 30px;
     margin-bottom: 16px;
     min-width: 150px;
+    cursor: pointer;
 }
 
 .testimonial .testimonial-image {
