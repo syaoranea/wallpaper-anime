@@ -1,0 +1,14 @@
+
+<section id="gallery">
+    <h2 class="headline">Galeria</h2>
+    <div id="gallery-container">
+        <div *ngFor="let result of filteredItems | paginate: { itemsPerPage: itensPerPage, currentPage: p }">
+            <img src="{{ result.miniatura }}" (click)="abrirImg(result)" alt="{{ result.nome }}" class="gallery-image">
+        </div>
+    </div>
+
+    <div class="pag">
+        <pagination-controls previousLabel=""  nextLabel="" (pageChange)="p = $event" (pageChange)="gotoScrool()">
+        </pagination-controls>
+    </div>
+</section>

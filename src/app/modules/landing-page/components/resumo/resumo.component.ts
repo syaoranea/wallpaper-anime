@@ -1,5 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { Categories } from '../../interface/categorias';
+import dados from '../../../../../assets/db.json';
+import { StateService } from '@uirouter/angular';
+import { GalleryService } from '../../services/gallery.service';
+import { GaleriaImgService } from 'src/app/modules/galeria/services/galeria-img.service';
 
 @Component({
   selector: 'app-resumo',
@@ -8,6 +12,7 @@ import { Categories } from '../../interface/categorias';
 })
 export class ResumoComponent implements OnInit {
 
+  recentes: string[] = []
    images = [
     {
       imageSrc:
@@ -31,12 +36,35 @@ export class ResumoComponent implements OnInit {
     },
   ]
   
-  constructor() { }
+  constructor(
+    private stateService: StateService,
+    private serviceGaleria: GaleriaImgService,
+  ){}
 
-  ngOnInit(): void {    
+  ngOnInit(): void { 
+    this.filterRecentDates(dados);
   }
 
+  filterRecentDates(dates: any[]) {
+    dates.sort((a, b) => new Date(b.data).getTime() - new Date(a.data).getTime());
+    console.log(dates.slice(0, 4));
+    return dates.slice(0, 4);
+  }
+
+  str = '2024-09-21';
+  date = new Date(this.str).getTime();
   categories: Categories[] = [Categories.Animação, Categories.Animes, Categories.Cosplay, Categories.Ecchi, Categories.Games, Categories.Hentai, Categories.Pixel, Categories.Retro];
 
-  
+  gocategorie(categoria: any){
+    this.serviceGaleria.setCategoria(categoria);
+    this.serviceGaleria.setUltimaPage('categoria');
+    this.stateService.go('galeria-img', {}, { location: false });
+  }
+
+  goToGalery(device: string){
+    this.serviceGaleria.setDevice(device);
+    this.serviceGaleria.setUltimaPage('device');
+    this.stateService.go('galeria-img', {}, { location: false });
+  }
+
 }

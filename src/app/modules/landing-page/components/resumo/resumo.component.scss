@@ -1,12 +1,12 @@
 /* Clients */
-#clients {
+#categoria {
     width: 100%;
     background: #eee;
     color: #111;
     padding: 50px;
 }
 
-#clients-container {
+#categoria-container {
     display: grid;
     grid-template-columns: repeat(4, 3fr);
     justify-items: center;
