@@ -1,1 +1,20 @@
-<ui-view></ui-view>
+<div class="app">
+    <nav id="navbar">
+        <div id="navbar-container">
+            <a href="#showcase">
+                <h1 class="logo">Wallpaper Anime</h1>
+            </a>
+            <ul id="navbar-items">
+                <li><a href="#categoria">Categoria</a></li>
+                <li (click)="goToGalery()">Galeria</li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </div>
+    </nav>
+    <ui-view></ui-view>
+    <footer id="footer">
+        <p>Copyright 2022 - Todos os direitos reservados.</p>
+        <p>Wallpaper Anime.</p>
+    </footer>
+    
+</div>

@@ -35,8 +35,14 @@ export class GaleriaImgComponent implements OnInit {
       return this.results.filter(item => item.categoria.includes(this.categoria));
     }
 
-    
+    if(this.ultimaPage === 'device'){
     return this.results.filter(item => item.dispositivo.includes(this.device));
+    }
+
+    if(this.ultimaPage === 'search'){
+      return this.results.filter(item => item.nome.includes(this.serviceGaleria.geSearch()));
+    }
+    return this.results;
   }
 
   retrieveData(){

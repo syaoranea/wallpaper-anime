@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { StateService } from '@uirouter/angular';
+import { GaleriaImgService } from 'src/app/modules/galeria/services/galeria-img.service';
 
 @Component({
   selector: 'app-heading',
@@ -10,16 +12,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeadingComponent implements OnInit {
 
-    searchTerm: string | undefined
+    searchTerm: string = '';
 
-  constructor() { }
+  constructor(
+    private serviceGaleria: GaleriaImgService,
+    private stateService: StateService,
+  ) { }
 
   ngOnInit(): void {
   }
 
   searchImg(){
-    console.log(this.searchTerm);
-    
+    this.serviceGaleria.setSearch(this.searchTerm);
+    this.stateService.go('galeria-img', {}, { location: false});    
   }
 
 }

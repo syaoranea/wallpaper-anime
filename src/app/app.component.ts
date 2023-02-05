@@ -15,4 +15,10 @@ export class AppComponent implements OnInit{
   ngOnInit() {
     this.stateService.go('landing-page', {}, { location: false });
   }
+
+    goToGalery(){
+      console.log('eee');
+      
+    this.stateService.go('galeria-img', {}, { location: false });
+  }
 }

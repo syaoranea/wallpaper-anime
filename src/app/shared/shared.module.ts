@@ -5,6 +5,7 @@ import { MaisRecentesComponent } from './components/mais-recentes/mais-recentes.
 import {MatPaginatorModule} from '@angular/material/paginator';
 import {NgxPaginationModule} from 'ngx-pagination';
 import { GaleriaComponent } from './components/galeria/galeria.component';
+import { ContatoComponent } from './components/contato/contato.component';
 
 
 
@@ -12,7 +13,8 @@ import { GaleriaComponent } from './components/galeria/galeria.component';
   declarations: [
    CarouselComponent,
    MaisRecentesComponent,
-   GaleriaComponent
+   GaleriaComponent,
+   ContatoComponent
   ],
   imports: [
     CommonModule,
@@ -23,7 +25,8 @@ import { GaleriaComponent } from './components/galeria/galeria.component';
     CarouselComponent,
     MaisRecentesComponent,
     NgxPaginationModule,
-    GaleriaComponent
+    GaleriaComponent,
+    ContatoComponent
 
   ]
 })

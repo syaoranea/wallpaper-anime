@@ -170,4 +170,10 @@
     .gallery-image {
         width: 100%;
     }
+
+    #categoria-container {
+        grid-template-columns: repeat(2, 3fr);
+        justify-content: space-between;
+        padding: 15px;
+    }
 }

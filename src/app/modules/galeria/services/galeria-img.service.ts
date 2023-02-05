@@ -17,6 +17,7 @@ export class GaleriaImgService {
   private device: string = "";
   private categoria: string = "";
   private ultimaPage: string = "";
+  private search: string = ""
 
   constructor() { }
 
@@ -50,6 +51,14 @@ export class GaleriaImgService {
 
   getUltimaPage() {
     return this.ultimaPage;
+  }
+
+  setSearch(value: string) {
+    this.search = value;
+  }
+
+  geSearch() {
+    return this.search;
   }
 
 }
