@@ -1,3 +1,6 @@
+import { PathLocationStrategy } from "@angular/common";
+
 export const environment = {
-  production: true
+  production: true,
+  locationStrategy: PathLocationStrategy,
 };

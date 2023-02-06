@@ -23,6 +23,7 @@ export class HeadingComponent implements OnInit {
   }
 
   searchImg(){
+    this.serviceGaleria.setUltimaPage('search');
     this.serviceGaleria.setSearch(this.searchTerm);
     this.stateService.go('galeria-img', {}, { location: false});    
   }
