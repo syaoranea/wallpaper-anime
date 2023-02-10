@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { StateService } from '@uirouter/angular';
 
 @Component({
@@ -8,6 +8,8 @@ import { StateService } from '@uirouter/angular';
 })
 export class AppComponent implements OnInit{ 
   title = 'wallpaper-anime';
+   @ViewChild('section1', { static: false }) section1: ElementRef | undefined;
+  @ViewChild('section2', { static: false })  section2: ElementRef | undefined;
 
   constructor(
     private stateService: StateService
@@ -16,9 +18,18 @@ export class AppComponent implements OnInit{
     this.stateService.go('landing-page', {}, { location: false });
   }
 
-    goToGalery(){
-      console.log('eee');
-      
+  goToGalery(){      
     this.stateService.go('galeria-img', {}, { location: false });
   }
+
+  scrollTo(section: string) {
+    console.log('111');
+    const link =  document.createElement('a');
+    link.href = '#'+ section;
+    document.body.appendChild(link);
+    link.click();
+    link.remove();
+
+  }
+
 }
