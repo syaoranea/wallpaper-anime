@@ -11,7 +11,7 @@ export class GaleriaImgService {
     categoria: '',
     miniatura: '',
     dispositivo: '',
-    data: ''
+    date: ''
   }
 
   private device: string = "";
@@ -61,4 +61,11 @@ export class GaleriaImgService {
     return this.search;
   }
 
+  orderByData(value:any[]){
+    let items = value
+    items.forEach(item => item.date = new Date(item.date));
+    console.log(items);
+    
+   return items.sort((a, b) => b.date.getTime() - a.date.getTime());
+  }
 }

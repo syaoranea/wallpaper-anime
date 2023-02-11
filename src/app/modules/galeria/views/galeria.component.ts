@@ -26,6 +26,7 @@ export class GaleriaImgComponent implements OnInit {
 
   ngOnInit(): void {
     window.scrollTo(0, 0);
+    this.results = this.serviceGaleria.orderByData(dados);
     this.filterValue();
     this.retrieveData();
   }

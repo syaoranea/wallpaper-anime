@@ -6,6 +6,7 @@ import {MatPaginatorModule} from '@angular/material/paginator';
 import {NgxPaginationModule} from 'ngx-pagination';
 import { GaleriaComponent } from './components/galeria/galeria.component';
 import { ContatoComponent } from './components/contato/contato.component';
+import { RedesSociaisComponent } from './components/redes-sociais/redes-sociais.component';
 
 
 
@@ -14,7 +15,8 @@ import { ContatoComponent } from './components/contato/contato.component';
    CarouselComponent,
    MaisRecentesComponent,
    GaleriaComponent,
-   ContatoComponent
+   ContatoComponent,
+   RedesSociaisComponent
   ],
   imports: [
     CommonModule,
@@ -26,7 +28,8 @@ import { ContatoComponent } from './components/contato/contato.component';
     MaisRecentesComponent,
     NgxPaginationModule,
     GaleriaComponent,
-    ContatoComponent
+    ContatoComponent,
+    RedesSociaisComponent
 
   ]
 })

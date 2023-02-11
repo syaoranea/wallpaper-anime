@@ -18,7 +18,7 @@ export class ImgPageComponent implements OnInit {
     categoria: '',
     miniatura: '',
     dispositivo: '',
-    data: '',
+    date: '',
     url: ''
   }
 

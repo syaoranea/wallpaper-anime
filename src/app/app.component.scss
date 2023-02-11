@@ -1,12 +1,4 @@
-/* Navbar */
-#navbar {
-    width: 100%;
-    background: #111;
-    color: #eee;
-    height: 80px;
-    position: fixed;
-    z-index: 99999;
-}
+
 
 #navbar-container {
     width: 80%;
@@ -31,13 +23,13 @@
     display: flex;
     list-style: none;
     text-transform: uppercase;
+    
     li{
         padding: 10px;
         
         a {
             text-decoration: none;
             color: #fff;
-            position: relative;
             transition: 0.8s all linear;
            &:hover{
             color: #000;
@@ -45,8 +37,7 @@
            }
         }
         &:hover {
-            color: #000!important;
-            content: '';
+            color: #000;
             background-color: #ff0;
             animation: ani ls cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
         }
