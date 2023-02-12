@@ -32,4 +32,8 @@ export class AppComponent implements OnInit{
 
   }
 
+  goToContato(){
+     this.stateService.go('contato', {}, { location: false});
+  }
+
 }

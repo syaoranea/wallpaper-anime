@@ -3,6 +3,7 @@ import { LOCALE_ID, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { ContatoModule } from './modules/contato/contato.module';
 import { GaleriaModule } from './modules/galeria/galeria.module';
 import { ImgPageModule } from './modules/img-page/img-page.module';
 import { LandingPageModule } from './modules/landing-page/landing-page.module';
@@ -18,7 +19,8 @@ import { SharedModule } from './shared/shared.module';
     SharedModule,
     LandingPageModule,
     ImgPageModule,
-    GaleriaModule
+    GaleriaModule,
+    ContatoModule
   ],
   providers: [
     {
