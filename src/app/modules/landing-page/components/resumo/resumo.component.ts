@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { Categories } from '../../interface/categorias';
+import  Categoies  from '../../interface/categorias.json';
 import dados from '../../../../../assets/db.json';
 import { StateService } from '@uirouter/angular';
-import { GalleryService } from '../../services/gallery.service';
+
 import { GaleriaImgService } from 'src/app/modules/galeria/services/galeria-img.service';
 
 @Component({
@@ -53,7 +53,7 @@ export class ResumoComponent implements OnInit {
 
   str = '2024-09-21';
   date = new Date(this.str).getTime();
-  categories: Categories[] = [Categories.Animação, Categories.Animes, Categories.Cosplay, Categories.Ecchi, Categories.Games, Categories.Hentai, Categories.Pixel, Categories.Retro];
+  categories = Categoies
 
   gocategorie(categoria: any){
     this.serviceGaleria.setCategoria(categoria);

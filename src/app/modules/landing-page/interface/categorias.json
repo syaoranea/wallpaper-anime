@@ -1,0 +1,83 @@
+[
+    {
+        "nome": "Animação 3D",
+        "subtitulo": "personagens na terceira dimensão",
+        "imagem": "https://webneel.com/daily/sites/default/files/images/daily/03-2013/29-3d-anime-characters.jpg"
+    },
+
+    { 
+        "nome": "Bishoujo",
+        "subtitulo": "animes que têm como personagem principal uma garota",
+        "imagem": "https://c4.wallpaperflare.com/wallpaper/723/562/517/love-hina-narusegawa-naru-aoyama-motoko-girl-wallpaper-preview.jpg"
+    },
+    { 
+        "nome": "Shoujo ai",
+        "subtitulo": "histórias que se focam no romance entre garotos",
+        "imagem": "https://c4.wallpaperflare.com/wallpaper/405/742/342/ash-lynx-eiji-okumura-shorter-wong-anime-boys-anime-hd-wallpaper-preview.jpg"
+    },
+    { 
+        "nome": "Cosplay",
+        "subtitulo": "é uma atividade e arte performática em que os participantes chamados cosplayers usam fantasias e acessórios para representar um personagem específico.",
+        "imagem": "https://c4.wallpaperflare.com/wallpaper/79/319/826/cosplay-nier-automata-no-2-yorha-wallpaper-preview.jpg"
+    },
+    { 
+        "nome": "Ecchi",
+        "subtitulo": "são os animes com cenas explícitas ou censuradas, normalmente com alguma carga de humor",
+        "imagem": "https://c4.wallpaperflare.com/wallpaper/848/925/188/anime-anime-girls-digital-digital-art-2d-hd-wallpaper-preview.jpg"
+    },
+    { 
+        "nome": "Gore",
+        "subtitulo": "são animes com muito sangue e violência, normalmente apresentando temáticas sombrias e sobrenaturais.",
+        "imagem": "https://c4.wallpaperflare.com/wallpaper/720/159/738/misaki-mei-another-aoi-ogata-anime-girls-wallpaper-preview.jpg"
+    },
+    { 
+        "nome": "Harem",
+        "subtitulo": "O foco aqui é um jovem entre seus 15 e 30 anos, que geralmente começa o anime sentindo-se perdido na vida",
+        "imagem": "https://c4.wallpaperflare.com/wallpaper/844/501/288/anime-to-love-ru-black-hair-blonde-wallpaper-preview.jpg"
+    },
+    { 
+        "nome": "Hentai",
+        "subtitulo": "são animes que não apresentam um enredo muito elaborado e são destinados para maiores de 18 anos.",
+        "imagem": "https://c4.wallpaperflare.com/wallpaper/922/261/257/anime-school-uniform-anime-girls-hentai-ouji-to-warawanai-neko-visual-novel-maimaki-mai-yokodera-youto-wallpaper-preview.jpg"
+    },
+    { 
+        "nome": "Isekai",
+        "subtitulo": "Pessoas comuns que vão parar em mundos fantásticos são o foco dos animes desse gênero.",
+        "imagem": "https://c4.wallpaperflare.com/wallpaper/702/3/600/re-zero-kara-hajimeru-isekai-seikatsu-rem-re-zero-natsuki-subaru-wallpaper-preview.jpg"
+    },
+    { 
+        "nome": "Mecha",
+        "subtitulo": "animes com robôs gigantes",
+        "imagem": "https://c4.wallpaperflare.com/wallpaper/152/126/554/neon-genesis-evangelion-anime-asuka-langley-soryu-space-wallpaper-preview.jpg"
+    },               
+    { 
+        "nome": "Seinen",
+        "subtitulo": "Conteúdo erótico e cenas com muita violência",
+        "imagem": "https://c4.wallpaperflare.com/wallpaper/147/968/872/vinland-saga-anime-hd-wallpaper-preview.jpg"
+    },
+    { 
+        "nome": "SciFi",
+        "subtitulo": "Animes de ficção científica",
+        "imagem": "https://c4.wallpaperflare.com/wallpaper/1011/282/496/anime-the-promised-neverland-emma-the-promised-neverland-norman-the-promised-neverland-ray-the-promised-neverland-hd-wallpaper-preview.jpg"
+    },
+    { 
+        "nome": "Shoujo",
+        "subtitulo": "Os animes Shoujo também são direcionados para o público jovem, mas principalmente do gênero feminino.",
+        "imagem": "https://c4.wallpaperflare.com/wallpaper/1005/159/579/sailor-moon-anime-girls-moon-anime-wallpaper-preview.jpg"
+    },
+    { 
+        "nome": "Shounen",
+        "subtitulo": "desenvolvimento e jornada do herói",
+        "imagem": "https://c4.wallpaperflare.com/wallpaper/519/45/310/dragon-ball-z-super-saiyan-son-goku-piccolo-wallpaper-preview.jpg"
+    },
+    { 
+        "nome": "Vida Escolar",
+        "subtitulo": "histórias que se passam em ambientes escolares, com protagonistas que são estudantes.",
+        "imagem": "https://c4.wallpaperflare.com/wallpaper/532/630/464/sono-bisque-doll-wa-koi-wo-suru-kitagawa-marin-anime-girls-blonde-long-hair-hd-wallpaper-preview.jpg"
+    },
+    { 
+        "nome": "Yuri",
+        "subtitulo": "traz o romance entre mulheres como foco, mas com um ponto de vista mais maduro e cenas mais explícitas.",
+        "imagem": "https://c4.wallpaperflare.com/wallpaper/895/198/328/anime-girl-yuri-wallpaper-preview.jpg"
+    }
+]

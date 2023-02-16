@@ -1,0 +1,41 @@
+section{
+    h2{
+        padding-top: 190px;
+    }
+    ul{
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(350px, 2fr));
+        width: 80%;
+        gap: 30px;
+        li{
+            
+            button{
+                background: #45484d;
+                width: 100%;
+                display: flex;
+                border: 1px solid #0e0e0e;
+                border-radius: 6px;
+                background: transparent;
+            justify-content: center;
+            align-items: center;
+            font-size: 28px;
+            height: 80px;
+                &:hover{
+                    transition: all 0.3s ease-out 0s;
+                    color: #000000;
+                    background-size: cover;
+                    background-color: #0e0e0e;
+                    background-image: url('https://c4.wallpaperflare.com/wallpaper/1005/159/579/sailor-moon-anime-girls-moon-anime-wallpaper-preview.jpg');
+                }
+                
+                img{
+                    width: 100px;
+                    margin-right: 16px;
+                }
+            }
+        }
+                
+    }
+
+}

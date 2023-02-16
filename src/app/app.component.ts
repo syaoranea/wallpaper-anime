@@ -36,4 +36,7 @@ export class AppComponent implements OnInit{
      this.stateService.go('contato', {}, { location: false});
   }
 
+  goToCategoria(){
+     this.stateService.go('categorias', {}, { location: false});
+  }
 }

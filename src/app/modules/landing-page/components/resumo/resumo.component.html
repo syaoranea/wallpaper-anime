@@ -2,7 +2,7 @@
     <div class="headline">Categorias</div>
     <ul id="categoria-container" >
         <li *ngFor="let categorie of categories; index as i;">
-            <button (click)="gocategorie(categorie)" class="primary">{{ categorie }}</button>
+            <button (click)="gocategorie(categorie.nome)" class="primary">{{ categorie.nome }}</button>
         </li>   
     </ul>
 </section>

@@ -1,0 +1,12 @@
+<section>
+    <h2 class="headline">Categoria</h2>
+    <ul>
+        <li *ngFor="let categorie of categories; index as i;">
+            <button (click)="gocategorie(categorie.nome)" class="primary" [ngStyle]="{'background-image': 'url(' + categorie.imagem + ')'}">
+                {{ categorie.nome }}
+            </button>
+        </li>
+        
+    </ul>
+    
+</section>
