@@ -39,4 +39,8 @@ export class AppComponent implements OnInit{
   goToCategoria(){
      this.stateService.go('categorias', {}, { location: false});
   }
+
+  goToLogin(){
+     this.stateService.go('login', {}, { location: false});
+  }
 }
